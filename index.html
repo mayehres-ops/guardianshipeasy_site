@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Guardianship Easy — Coming Soon</title>
+  <meta name="description" content="Guardian & Court Visitor software to speed up ARP/Order intake, forms, emails, and scheduling. Sign up to be notified at launch.">
+  <meta property="og:title" content="Guardianship Easy — Coming Soon">
+  <meta property="og:description" content="Guardian & Court Visitor software to speed up ARP/Order intake, forms, emails, and scheduling. Sign up to be notified at launch.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://guardianshipeasy.com/">
+  <style>
+    :root {
+      --bg: #0f172a; /* slate-900 */
+      --card: #0b1224;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --accent: #10b981; /* emerald-500 */
+      --accent-2: #34d399; /* emerald-400 */
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: radial-gradient(1200px 800px at 20% -10%, #0ea5e930 0%, transparent 60%), var(--bg);
+      color: var(--text); font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif;
+      line-height: 1.5;
+    }
+    header { padding: 16px 20px; max-width: 960px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
+    .brand { display:flex; gap:10px; align-items:center; font-weight: 800; letter-spacing: 0.2px; }
+    .badge { font-size: 12px; padding: 4px 8px; border-radius: 999px; background: #065f4620; color: #a7f3d0; border: 1px solid #10b98140;}
+    main   { max-width: 960px; margin: 0 auto; padding: 48px 20px 72px; }
+    h1 { font-size: clamp(32px, 6vw, 54px); margin: 0 0 10px; }
+    p.lead { font-size: clamp(16px, 2.5vw, 20px); color: var(--muted); margin: 0 0 24px; }
+    .card { background: linear-gradient(180deg, #0b1224, #0b1224e0); border: 1px solid #33415580; border-radius: 16px; padding: 20px; }
+    .row { display: grid; grid-template-columns: 1fr; gap: 20px; }
+    @media (min-width: 900px) { .row { grid-template-columns: 1.1fr 0.9fr; } }
+    ul { padding-left: 18px; margin: 0; color: var(--muted); }
+    li { margin: 6px 0; }
+    .form { display:flex; gap:10px; flex-direction: column; }
+    @media (min-width: 640px) { .form { flex-direction: row; } }
+    input[type="email"] {
+      flex:1; background: #0b1224; border: 1px solid #334155; color: var(--text);
+      padding: 12px 14px; border-radius: 12px; outline: none;
+    }
+    input[type="email"]:focus { border-color: var(--accent-2); box-shadow: 0 0 0 3px #10b98130; }
+    button {
+      background: linear-gradient(180deg, var(--accent), var(--accent-2));
+      color: #06221a; border: none; padding: 12px 16px; border-radius: 12px; font-weight: 700; cursor: pointer;
+    }
+    button:active { transform: translateY(1px); }
+    footer { max-width: 960px; margin: 32px auto 48px; color: #94a3b8; font-size: 13px; padding: 0 20px; }
+    .tiny { font-size: 12px; color: #93c5b8; }
+    .logo { width: 28px; height: 28px; display: grid; place-items: center; background:#10b98120; border: 1px solid #10b98150; color:#34d399; border-radius: 8px; font-weight:900; }
+    .muted { color: var(--muted); }
+    .pill  { display:inline-block; padding: 2px 10px; border-radius: 999px; border:1px solid #334155; color:#cbd5e1; font-size:12px; }
+    .spacer { height: 8px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">GE</div>
+      <div>Guardianship Easy</div>
+      <div class="badge">Coming soon</div>
+    </div>
+    <div class="pill">Court‑friendly tools</div>
+  </header>
+
+  <main>
+    <div class="row">
+      <section>
+        <h1>Guardian & Court Visitor tools, simplified.</h1>
+        <p class="lead">Intake ARPs & Orders, generate court forms in clicks, email guardians, and stay on schedule. We’re polishing the first public release—join the waitlist to get notified.</p>
+        <div class="spacer"></div>
+        <div class="card">
+          <form class="form" method="post" action="https://buttondown.email/api/emails/embed-subscribe/BUTTONDOWN_USERNAME">
+            <!-- Replace BUTTONDOWN_USERNAME with your Buttondown handle (e.g., guardianshipeasy). -->
+            <input type="email" name="email" placeholder="you@organization.org" required>
+            <input type="hidden" name="tag" value="guardian-waitlist">
+            <button type="submit">Notify me at launch</button>
+          </form>
+          <p class="tiny" style="margin-top:8px;">We respect confidentiality. No spam, ever.</p>
+        </div>
+      </section>
+
+      <aside class="card">
+        <h2 style="margin-top:0;margin-bottom:6px;">What it will do</h2>
+        <ul>
+          <li>OCR ARPs & Orders (incl. handwriting) without overwriting your workbook</li>
+          <li>Build Court Visitor & Payment/Mileage forms automatically</li>
+          <li>Email guardians with attachments and log what was sent</li>
+          <li>Create calendar appointments & reminders</li>
+          <li>Map & route visits sensibly</li>
+        </ul>
+        <p class="muted" style="margin-top:14px;">Software assistance — <em>not</em> legal advice.</p>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    © <span id="y"></span> Guardianship Easy. All rights reserved.
+    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>
